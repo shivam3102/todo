@@ -1,0 +1,131 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffb4b4;
+  color: white;
+}
+
+nav {
+  background-color: #ff9292;
+  z-index: 1;
+  top: 0px;
+}
+
+/* footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+
+img {
+  margin-top: 10px;
+}
+button {
+  background-color: #ff5e78 !important;
+}
+
+.medium {
+  background-color: #ff5e78 !important;
+}
+
+.sidenav {
+  transition: all 0.4s linear;
+}
+
+.opa {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 100%;
+  top: 0;
+  background-color: rgba(128, 128, 128, 0.459);
+}
+
+.signup {
+  margin-top: 50px;
+  padding-left: 50px;
+}
+
+.card {
+  background-color: #ff9292;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.card-image {
+  padding: 10px;
+  background-color: wheat;
+  border-radius: 10px;
+}
+
+.todo {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: wheat;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.black-text {
+  padding-left: 30px;
+}
+
+.txt {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px 10px 5px 45px;
+  width: 50%;
+  height: auto;
+  background-color: #ff5e78;
+}
+
+.bxt {
+  margin: 5px;
+}
+
+.input-field input[type="text"] + label {
+  font-size: 18px !important;
+  color: #000;
+}
+
+.input-field input[type="text"] {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type="email"] + label {
+  color: #000;
+}
+
+.input-field input[type="email"] {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type="password"] + label {
+  color: #000;
+}
+
+.input-field input[type="password"] {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+} 
+
+@media screen and (min-width: 600px) {
+  footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 23;
+  }
+}
