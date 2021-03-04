@@ -21,9 +21,9 @@ mongoose.connect(process.env.MONGO_URI,
         })
     })
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'));
-}
+    if (process.env.NODE_ENV === 'production') {
+        app.use(express.static('client/build'));
+    }
 
 app.use('/api', authRoute)
 app.use('/api', userRoute)
